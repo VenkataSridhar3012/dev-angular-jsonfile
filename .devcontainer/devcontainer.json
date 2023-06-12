@@ -1,6 +1,6 @@
 {
     "name": "Angular Dev Container",
-    "dockerFile": "Dockerfile",
+    "image": "node:16",
     "extensions": [
       "ms-vscode.vscode-typescript-tslint-plugin",
       "angular.ng-template",
@@ -10,6 +10,7 @@
     "workspaceFolder": "/workspace",
     "mounts": [
       "source=.,target=/workspace,type=bind,consistency=delegated"
-    ]
+    ],
+    "postCreateCommand": "cp -r path/to/source/directory/* /workspace"
   }
   
