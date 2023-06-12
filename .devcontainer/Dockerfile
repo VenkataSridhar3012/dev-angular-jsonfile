@@ -1,6 +1,9 @@
 # Use the official Node.js 16 image as the base image
 FROM node:16
 
+# Install Angular CLI globally
+RUN npm install -g @angular/cli
+
 # Set the working directory in the container
 WORKDIR /workspace
 
@@ -9,7 +12,6 @@ COPY package*.json ./
 
 # Install project dependencies
 RUN npm install
-RUN npm install -g @angular/cli
 
 # Copy the entire project to the container
 COPY . .
