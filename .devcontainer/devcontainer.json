@@ -1,3 +1,18 @@
+// {
+//     "name": "Angular Dev Container",
+//     "image": "node:16",
+//     "extensions": [
+//       "ms-vscode.vscode-typescript-tslint-plugin",
+//       "angular.ng-template",
+//       "nrwl.angular-console"
+//     ],
+//     "forwardPorts": [4200],
+//     "mounts": [
+//       "source=.,target=/workspace,type=bind,consistency=delegated"
+//     ],
+//     "postCreateCommand": "npm install"
+//   }
+
 {
     "name": "Angular Dev Container",
     "image": "node:16",
@@ -10,6 +25,11 @@
     "mounts": [
       "source=.,target=/workspace,type=bind,consistency=delegated"
     ],
-    "postCreateCommand": "npm install"
+    "postCreateCommand": "npm install",
+    "remoteUser": "codespace",
+    "settings": {
+      "git.branch": "dev"
+    }
   }
+  
   
