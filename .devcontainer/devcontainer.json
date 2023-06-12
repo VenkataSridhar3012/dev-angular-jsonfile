@@ -1,16 +1,15 @@
 {
-  "name": "Angular Dev Container",
-  "image": "node:16",
-  "extensions": [
-    "ms-vscode.vscode-typescript-tslint-plugin",
-    "angular.ng-template",
-    "nrwl.angular-console",
-    "johnpapa.angular-essentials"
-  ],
-  "forwardPorts": [4200],
-  "postCreateCommand": "npm install -g @angular/cli && npm install",
-  "workspaceFolder": "/workspace",
-  "mounts": [
-    "source=.,target=/workspace,type=bind,consistency=delegated"
-  ]
-}
+    "name": "Angular Dev Container",
+    "dockerFile": "Dockerfile",
+    "extensions": [
+      "ms-vscode.vscode-typescript-tslint-plugin",
+      "angular.ng-template",
+      "nrwl.angular-console"
+    ],
+    "forwardPorts": [4200],
+    "workspaceFolder": "/workspace",
+    "mounts": [
+      "source=.,target=/workspace,type=bind,consistency=delegated"
+    ]
+  }
+  
