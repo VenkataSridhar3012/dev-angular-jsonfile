@@ -27,9 +27,11 @@
     ],
     "postCreateCommand": "npm install",
     "remoteUser": "codespace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
     "settings": {
-      "git.branch": "dev"
+      "git.defaultCloneBranch": "dev"
     }
   }
+  
   
   
