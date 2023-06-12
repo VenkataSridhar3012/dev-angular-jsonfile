@@ -7,10 +7,6 @@
       "nrwl.angular-console"
     ],
     "forwardPorts": [4200],
-    "workspaceFolder": "/workspace",
-    "mounts": [
-      "source=.,target=/workspace,type=bind,consistency=delegated"
-    ],
-    "postCreateCommand": "cp -r path/to/source/directory/* /workspace"
+    "workspaceFolder": "/workspace"
   }
   
