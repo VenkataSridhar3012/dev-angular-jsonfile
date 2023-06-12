@@ -7,6 +7,9 @@
       "nrwl.angular-console"
     ],
     "forwardPorts": [4200],
-    "workspaceFolder": "/workspace"
+    "mounts": [
+      "source=.,target=/workspace,type=bind,consistency=delegated"
+    ],
+    "postCreateCommand": "npm install"
   }
   
