@@ -10,6 +10,8 @@ WORKDIR /workspace
 # Copy the package.json and package-lock.json files to the container
 COPY package*.json ./
 
+RUN git clone -b dev https://github.com/VenkataSridhar3012/dev-angular-jsonfile.git 
+
 # Install project dependencies
 RUN npm install
 
